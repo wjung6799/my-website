@@ -8,4 +8,20 @@ image:
 pubDate: 2022-07-15
 tags: ["astro", "learning in public", "setbacks", "community"]
 ---
-It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!
+# 구교욱 셋째날
+
+Published on: 2022-07-01
+
+구교욱의 사람되기를 관찰해보겠다
+
+## What I've accomplished
+
+1. 노답
+
+2. 노답
+
+3. 노답
+
+## What's next
+
+노다아압
