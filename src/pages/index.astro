@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-const pageTitle = "Home Page";
+import Greeting from '../components/Greeting.jsx';
+const pageTitle = "Home";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
+  <h2>Hello my name is Won Jung</h2>
+  <Greeting client:load identities={["Java Developer", "Astro Developer", "Self-Taught Programmer", "Seattle Based"]} />
 </BaseLayout>
