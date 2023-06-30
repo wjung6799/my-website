@@ -1,9 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting.jsx';
-const pageTitle = "Home";
+import RotatingWords from '../components/RotatingWords.astro';
+const pageTitle = "Won Jung";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <h2>Hello my name is Won Jung</h2>
-  <Greeting client:load identities={["Java Developer", "Astro Developer", "Self-Taught Programmer", "Seattle Based"]} />
+	<h1 class="text-3xl font-bold underline">
+		Hello world!
+	</h1>
 </BaseLayout>
