@@ -1,4 +1,8 @@
 ---
 const { title, url } = Astro.props
 ---
-<li><a href={url}>{title}</a></li>
+<li>
+    <a class="mb-6 text-lg italic font-normal text-gray-500 text-xl dark:text-gray-400" href={url}>
+        {title}
+    </a>
+</li>

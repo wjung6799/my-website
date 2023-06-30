@@ -6,9 +6,9 @@ const pageTitle = "About Me";
 
 const identity = {
   firstName: "Won",
-  country: "Jung",
+  location: "Seattle",
   occupation: "Software Engineer",
-  hobbies: ["weight lifting", "economics", "reading books"],
+  hobbies: ["weight lifting", "reading books"],
 };
 
 const happy = true;
@@ -22,20 +22,27 @@ const textCase = "uppercase";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-    <p>Here are a few facts about me:</p>
-    <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {identity.hobbies.length >= 2 && 
-        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-    } 
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-        {skills.map((skill) => <li class="skill">{skill}</li>)}
-    </ul>
+    <h2 class="mb-5 italic text-2xl leading-none tracking-tight text-gray-900 dark:text-white">
+        TL;DR: I love building stuff
+    </h2>
 
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
+    <p class="mb-6 text-lg font-normal text-gray-500 text-xl dark:text-gray-400">
+        My name is {identity.firstName}. I live in {identity.location} and I work as a {identity.occupation}.
+    </p>
+    <p class="mb-6 text-lg font-normal text-gray-500 text-xl dark:text-gray-400">
+        I started out as a front end dev but now I have been working as a back end dev for 3 years.
+    </p>
+    <p class="mb-6 text-lg font-normal text-gray-500 text-xl dark:text-gray-400">
+        Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
+    </p>
+    <p class="mb-6 text-lg font-normal text-gray-500 text-xl dark:text-gray-400">
+        My skills are:
+    </p>
+    <ul>
+        {skills.map((skill) => 
+            <span class="m-1 inline-flex items-center px-2 py-1 mr-2 text-sm font-medium text-gray-800 bg-gray-100 rounded dark:bg-gray-700 dark:text-gray-300">
+                {skill}
+            </span>
+        )}
+    </ul>
 </BaseLayout>
