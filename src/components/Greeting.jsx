@@ -9,7 +9,7 @@ export default function Greeting({identities}) {
 
   return (
     <div> 
-      <h3>I am a {identity}!</h3>
+      <h3>Who am I? {identity}</h3>
       <button onClick={() => setIdentity(randomMessage())}>
         What else?
       </button>
