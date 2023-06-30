@@ -12,13 +12,19 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body>
+  <body class="m-8">
     <Header />
-    <h1 class="text-center">{pageTitle}</h1>
-    <slot />
-    <Footer />
+      <div class="lg:ml-20 lg:mr-20 lg:mb-20 lg:mt-10">
+      <h1 class="mb-4 text-3xl leading-none tracking-tight text-gray-900 md:text-3xl lg:text-3xl dark:text-white">
+      {pageTitle}
+      </h1>
+      <slot />
+      <Footer />
+    </div>
     <script>
       import "../scripts/menu.js";
     </script>
+    <script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+
   </body>
 </html>
